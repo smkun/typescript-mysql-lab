@@ -1,6 +1,6 @@
 import * as mysql from 'mysql';  // Import the MySQL module
 import * as readline from 'readline';  // Import the readline module for reading user input
-import * as dotenv from 'dotenv'; //Import the dotenv module to read .env file
+import * as dotenv from 'dotenv';  // Import the dotenv module to load environment variables
 
 // Load environment variables from .env file
 dotenv.config();
@@ -18,7 +18,7 @@ function question(query: string): Promise<string> {
   });
 }
 
-// Create a MySQL connection with specified configuration
+// Create a MySQL connection with specified configuration from environment variables
 const connection: mysql.Connection = mysql.createConnection({
   host: process.env.DB_HOST,  // Database host
   user: process.env.DB_USER,  // Database user
