@@ -38,7 +38,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var mysql = require("mysql"); // Import the MySQL module
 var readline = require("readline"); // Import the readline module for reading user input
-var dotenv = require("dotenv"); //Import the dotenv module to read .env file
+var dotenv = require("dotenv"); // Import the dotenv module to load environment variables
 // Load environment variables from .env file
 dotenv.config();
 // Create a readline interface for input and output
@@ -52,7 +52,7 @@ function question(query) {
         rl.question(query, resolve); // Resolve the promise with the user's input
     });
 }
-// Create a MySQL connection with specified configuration
+// Create a MySQL connection with specified configuration from environment variables
 var connection = mysql.createConnection({
     host: process.env.DB_HOST, // Database host
     user: process.env.DB_USER, // Database user
