@@ -1,0 +1,23 @@
+{
+  "name": "python-mysql-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "mysql2": "^3.10.0",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/mysql": "^2.15.26",
+    "@types/node": "^20.14.2",
+    "@types/readline-sync": "^1.4.8",
+    "typescript": "^5.4.5"
+  }
+}
